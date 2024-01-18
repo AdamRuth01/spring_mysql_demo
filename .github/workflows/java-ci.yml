@@ -13,6 +13,6 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '21'
-          distribution: 'temurin' # Eller annan distribution som stöder Java 21
+          distribution: 'temurin' # Eller annan distribution som stöder Java 21 jupp
       - name: Build with Maven
         run: mvn -B package --file pom.xml
