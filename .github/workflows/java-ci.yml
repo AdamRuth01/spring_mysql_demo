@@ -1,4 +1,5 @@
 name: Java CI
+
 on: [push]
 
 jobs:
@@ -12,6 +13,6 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '21'
-          distribution: 'temurin'
+          distribution: 'temurin' # Eller annan distribution som stöder Java 21
       - name: Build with Maven
         run: mvn -B package --file pom.xml
